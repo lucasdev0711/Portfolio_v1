@@ -6,6 +6,7 @@ a{
 
 header{
     width: 100%;
+    position: absolute;
 }
 
 #navbar{
@@ -16,6 +17,7 @@ header{
     background-color: black;
     color: white;
     height: 70px;
+    
 }
 #navbar p{
     font-size: 25px;
@@ -55,10 +57,9 @@ header{
 #nav-list li a:hover::after {
     width: 100%;
 }
-#active::selection{
-    color: #ffffff;
-    position: relative;
-    text-decoration: none;
-    background-color: #333333;
-    
+
+/* remove hover do ativo */
+#nav-list.active:hover {
+  text-decoration: none;
+  cursor: default;
 }
